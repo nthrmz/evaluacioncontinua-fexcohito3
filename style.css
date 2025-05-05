@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    font-family: sans-serif;
+}
+  
+.portada {
+    display: flex;
+    height: 100vh;
+}
+  
+.caja{
+    flex: 1;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.3s ease;
+}
+  
+.caja:hover {
+    filter: brightness(0.9);
+}
+  
+.caja0{
+    flex: 2;
+    background-image: url(./Imagenes/index1.0.jpg);
+}
+  
+.caja1{
+    background-image: url(./Imagenes/index3.jpg);
+}
+  
+.caja2{
+    background-image: url(./Imagenes/index2.jpg);
+}
+  
+.caja3{
+    background-image: url(./Imagenes/index4.jpg);
+}
+  
+.boton {
+    width: 100%;
+    background-color: rgba(110, 16, 64, 0.8);
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+  
+.caja:hover .boton{
+    background-color: rgba(140, 24, 86, 0.95);
+}  
+
+@media (max-width: 1024px){
+    .portada {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .caja {
+      height: 50vh;
+      flex: none;
+    }
+  
+    .caja0, .caja1, .caja2, .caja3 {
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .boton {
+      font-size: 1rem;
+      padding: 12px;
+    }
+}

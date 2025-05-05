@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2ebf9;
+    color: #2d1344;
+    line-height: 1.6;
+}
+  
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #f2ebf9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+  
+.header__logo{
+    height: 60px;
+}
+  
+.header__logo-link{
+    text-decoration: none;
+}
+
+.nav__lista{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+  
+.nav__link {
+    display: inline-block;
+    padding: 12px 16px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.2s;
+}
+  
+.nav__link:hover {
+    transform: scale(1.05);
+  }
+  
+.nav__link--bg1{
+    background-image: url(../Imagenes/index1.jpg);
+  }
+  
+.nav__link--bg2{
+    background-image: url(../Imagenes/index3.jpg);
+}
+  
+.nav__link--bg3{
+    background-image: url(../Imagenes/index4.jpg);
+}
+
+.main{
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.contacto-main{
+    padding: 80px 20px 40px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+  
+.contactos h2,
+.ubicacion h2{
+    color: #a11260;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+  
+.contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 12px 0;
+    font-size: 18px;
+    color: #7b1b55;
+}
+  
+.contacto img{
+    width: 30px;
+    height: 30px;
+}
+  
+  .ubicacion p{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #7b1b55;
+}
+  
+.mapa{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+  
+.mapa a{
+    display: inline-block;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.mapa a:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.mapa img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.footer{
+    background-color: #d38eb7;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+  
+.footer__titulo{
+    font-weight: bold;
+    color: #2b124c;
+    margin-bottom: 1.5rem;
+}
+  
+.footer__redes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+  
+.footer__item{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none; 
+    color: inherit; 
+}
+  
+.footer__icono{
+    width: 32px;
+    height: 32px;
+}
+  
+.footer__texto{
+    color: #2b124c;
+    font-weight: normal;
+}
+
+@media (max-width: 1024px){
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 20px;
+    }
+  
+    .nav__lista {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .main {
+      padding: 15px;
+      margin-top: 110px;
+    }
+  
+    .contacto-main {
+      padding: 60px 15px 30px;
+      max-width: 95%;
+    }
+  
+    .contactos h2,
+    .ubicacion h2 {
+      font-size: 2rem;
+    }
+  
+    .contacto {
+      flex-direction: column;
+      gap: 6px;
+      font-size: 1rem;
+    }
+  
+    .contacto img {
+      width: 28px;
+      height: 28px;
+    }
+  
+    .ubicacion p {
+      font-size: 0.95rem;
+    }
+  
+    .mapa {
+      padding: 10px 0;
+    }
+  
+    .mapa a {
+      width: 100%;
+      border-radius: 10px;
+    }
+  
+    .mapa img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .footer__redes {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .footer__item {
+      justify-content: center;
+    }
+}  
